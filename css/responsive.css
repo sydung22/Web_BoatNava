@@ -1,0 +1,40 @@
+@media(min-width: 1200px){
+    .container{
+        max-width: 1170px;
+    }
+    .nava-header .nava-nav ul li a:hover{
+        color: #e7434e;
+    }
+    .nava-header .nava-nav ul li:last-child a:hover{
+        background-color: #ffffff;
+        color: #e7434e;
+    }
+    .banner-nava .input-group-text:hover{
+        background-color: #000000;
+    }
+    .nava-places .image-list a:hover .img-hover{
+        left: 0;
+    }
+    /* .nava-places .image-list a:hover img{
+        transform: scale(1.2);
+    } */
+    .nava-places .image-list a:hover .image-quantity,
+    .nava-places .image-list a:hover .image-title{
+        left: -100%;
+    }
+    .nava-places .button-more a:hover::before{
+        transition: 0.5s all ease;
+        left: 0;
+        right: 0;
+        opacity: 1;
+        z-index: -1;
+    }
+    .nava-places .button-more a:hover{
+        color: #fff;
+    }
+    .nava-service .service-button a:hover{
+        box-shadow: inset 300px 0 0 0 #fff;
+        color: #e7434e;
+    }
+}
+

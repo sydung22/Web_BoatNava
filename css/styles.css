@@ -1,0 +1,457 @@
+.container{
+    padding: 0;
+}
+/* Scrolling */
+.scrolling-active{
+    background-color: #000;
+    box-shadow: 0 3px 1rem rgba(0,0,0,0.5);
+}
+header{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.5s;
+}
+.nava-header .container-fluid{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+
+}
+.nava-header .nava-nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    list-style: none;
+    margin-bottom: 0;
+}
+.nava-header .nava-nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 35px 7px;
+    transition: 0.5s;
+}
+.nava-header .nava-nav ul li:last-child a{
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.banner-nava {
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 850px;
+}
+.banner-nava .container{
+    padding-top: 270px;
+    min-height: 850px;
+    position: relative;
+}
+.banner-nava .banner-text{
+    text-align: center;
+    color: #fff;
+}
+.banner-nava .banner-text p:first-child{
+    font-size: 72px;
+    font-weight: 500;
+    margin-bottom: 0;
+    letter-spacing: 5px;
+}
+.banner-nava .banner-text p{
+    font-size: 30px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+.banner-nava .input-group{
+    padding: 30px 180px 0;
+    width: 100%;
+    margin: 0 auto;
+}
+.banner-nava .form-control:focus{
+    border-color: unset;
+    box-shadow: none;
+}
+.banner-nava .form-control{
+    border: unset;
+}
+.banner-nava .input-group-text{
+    background-color: #e7434e;
+    padding: 15px 25px 15px 45px;
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+    border: unset;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.banner-nava .input-group-text::before{
+    position: absolute;
+    content: '';
+    background-image: url(../img/icon-boat.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+    width: 18px;
+    height: 18px;
+    left: 20px;
+}
+.banner-nava .banner-info{
+    display: flex;
+    background-color: #fff;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px 0 20px;
+    text-align: center;
+    border-radius: 7px;
+    position: absolute;
+    bottom: -60px;
+    width: 100%;
+    box-shadow: 0px 0px 30px rgb(103 92 92 / 25%);
+}
+.banner-nava .banner-info p:first-child{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.nava-places{
+    padding: 80px 0 100px;
+}
+.places-title{
+    text-align: center;
+    padding: 40px 0;
+}
+.places-title p:first-child{
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+.places-title p:last-child{
+    color: #717171;
+}
+.image-list img{
+    height: 360px;
+    object-fit: cover;
+}
+.image-list a{
+    color: #fff;
+}
+.nava-places .image-quantity{
+    top: 15px;
+    left: 20px;
+    background-color: #e7434e;
+    color: #fff;
+    text-align: center;
+    padding: 5px 15px 5px 35px;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: 0.7s;
+}
+.nava-places .col-4:nth-child(n+3){
+    margin-top: 24px;
+}
+.nava-places .col-4:nth-child(2) .image-quantity,
+.nava-places .col-4:nth-child(4) .image-quantity,
+.nava-places .col-4:nth-child(5) .image-quantity,
+.nava-places .col-4:nth-child(2) .image-title,
+.nava-places .col-4:nth-child(4) .image-title,
+.nava-places .col-4:nth-child(5) .image-title{
+    left: 32px;
+}
+.nava-places .image-title{
+    bottom: 15px;
+    left: 20px;
+    color: #fff;
+    line-height: 1.4;
+    transition: 0.8s;
+}
+.nava-places .image-title p:first-child{
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.nava-places .image-title p:last-child{
+    font-size: 20px;
+    font-weight: 200;
+}
+.nava-places .image-quantity::before{
+    position: absolute;
+    content: '';
+    background-image: url(../img/icon-boat.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+    width: 18px;
+    height: 18px;
+    left: 7px;
+}
+.nava-places .col-4,
+.nava-places .col-8{
+    overflow: hidden;
+}
+.nava-places .img-hover{
+    background: rgba(0,0,0,0.8);
+    top: 0;
+    left: 100%;
+    height: 100%;
+    width: 100%;
+    padding: 80px;
+    text-align: center;
+    border-radius: 3px;
+    transition: 0.8s;
+}
+.nava-places .col-8:nth-child(1) .img-hover,
+.nava-places .col-4:nth-child(3) .img-hover
+{
+    margin-right: 12px;
+}
+.nava-places .col-4:nth-child(n+2) .img-hover{
+    padding: 50px;
+}
+.nava-places .col-4:nth-child(2) .img-hover,
+.nava-places .col-4:nth-child(5) .img-hover
+{
+    margin-left: 12px;
+}
+.nava-places .col-4:nth-child(4) .img-hover{
+    margin: 0 12px;
+}
+.nava-places .img-hover p:first-child{
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+}
+.nava-places .img-hover p:last-child{
+    text-align: justify;
+}
+.nava-places .button-more{
+    text-align: center;
+    padding: 40px 0 0;
+}
+.nava-places .button-more a{
+    text-decoration: none;
+    color: #343434;
+    border: 1px solid #bdbdbd;
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+    position: relative;
+    transition: ease-out 0.5s;
+    z-index: 1;
+}
+.nava-places .button-more a::before{
+    position: absolute;
+    content: " ";
+    background-color: #000;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    top: 0;
+    opacity: 0;
+    transition: 0.5s all ease;
+}
+.nava-service{
+    background-image: url(../img/banner2.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+    padding: 100px 0;
+}
+.nava-service .service-text{
+    text-align: center;
+    color: #fff;
+    line-height: 1.3;
+    padding-bottom: 70px;
+}
+.nava-service .service-text p:first-child{
+    font-size: 72px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.nava-service .service-text p:last-child{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+.nava-service .service-button{
+    text-align: center;
+}
+.nava-service .service-button a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #e7434e;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border-radius: 7px;
+    font-size: 14px;
+    box-shadow: inset 0 0 0 0 #fff;
+    transition: ease-out 0.5s;
+    outline: none;
+}
+.nava-product {
+    padding: 50px 0;
+}
+.nava-product .product-title{
+    text-align: center;
+    padding: 50px 0;
+}
+.nava-product .product-title p:first-child{
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #343435;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+.nava-product .product-title p:last-child{
+    color: #7a7a7a
+}
+.nava-product .product-price{
+    top: 15px;
+    left: 20px;
+    background-color: #e7434e;
+    color: #fff;
+    text-align: center;
+    padding: 7px 13px;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 4px;
+}
+.nava-product .col-6:nth-child(2n) .product-price,
+.nava-product .col-6:nth-child(2n) .product-des{
+    left: 32px;
+}
+.nava-product .product-des{
+    bottom: 15px;
+    left: 20px;
+    color: #fff;
+    line-height: 1.4;
+}
+.nava-product .col-6:nth-child(n+3){
+    margin-top: 24px;
+}
+.nava-product .product-des > p{
+    font-size: 30px;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+.nava-product .product-des .des-info{
+    display: flex;
+    align-items: center;
+}
+.nava-product .product-des .des-info p{
+    padding-left: 20px;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+.nava-product .product-des .des-info p:last-child{
+    padding-left: 70px;
+}
+.nava-product .product-des .des-info p:first-child::before,
+.nava-product .product-des .des-info p:last-child::before{
+    content: " ";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+.nava-product .product-des .des-info p:first-child::before{
+    left: 0;
+    top: 2px;
+    width: 13px;
+    height: 17px;
+    background-image: url(../img/icon-map.png);
+}
+.nava-product .product-des .des-info p:last-child::before{
+    left: 42px;
+    top: 4px;
+    width: 22px;
+    height: 14px;
+    background-image: url(../img/icon-people.png);
+}
+.nava-product .button-product-more{
+    text-align: center;
+    padding: 80px 0 50px;
+}
+.nava-product .button-product-more a{
+    text-decoration: none;
+    color: #343434;
+    border: 1px solid #bdbdbd;
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+}
+.nava-footer{
+    background-color: #404040;
+    padding: 50px 0;
+}
+.nava-footer p{
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+.nava-footer ul{
+    list-style: none;
+    padding: 0;
+}
+.nava-footer ul li{
+    padding-bottom: 10px;
+}
+.nava-footer ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+}
+.nava-footer .form-control:focus{
+    border-color: unset;
+    box-shadow: none;
+}
+.nava-footer .form-control{
+    border: unset;
+    border-radius:5px;
+}
+.nava-footer .input-group{
+    padding-top: 7px;
+}
+.nava-footer .input-group-text{
+    background-color: #e7434e;
+    padding: 10px 25px;
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+    border: unset;
+    border-radius: 5px;
+}
+.nava-footer .col-footer:last-child{
+    padding-left: 80px;
+}
+.col-footer .icon-network{
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+}
+.col-footer .icon-network .network-img{
+    background-color: #717171;
+    margin-left: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.col-footer .icon-network .network-img:first-child{
+    margin-left: 0;
+}
