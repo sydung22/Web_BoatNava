@@ -79,7 +79,7 @@ header{
 .banner-nava .form-control{
     border: unset;
 }
-.banner-nava .input-group-text{
+.input-group-text{
     background-color: #e7434e;
     padding: 15px 25px 15px 45px;
     font-size: 14px;
@@ -119,7 +119,7 @@ header{
     margin-bottom: 0;
 }
 .nava-places{
-    padding: 80px 0 100px;
+    padding: 80px 0;
 }
 .places-title{
     text-align: center;
@@ -137,9 +137,15 @@ header{
 .image-list img{
     height: 360px;
     object-fit: cover;
+    transition: 1s;
 }
 .image-list a{
     color: #fff;
+    margin-left: 33px;
+    width: max-content;
+}
+.image-list{
+    margin-left: -33px;
 }
 .nava-places .image-quantity{
     top: 15px;
@@ -154,7 +160,7 @@ header{
     transition: 0.7s;
 }
 .nava-places .col-4:nth-child(n+3){
-    margin-top: 24px;
+    margin-top: 33px;
 }
 .nava-places .col-4:nth-child(2) .image-quantity,
 .nava-places .col-4:nth-child(4) .image-quantity,
@@ -195,8 +201,12 @@ header{
 .nava-places .col-8{
     overflow: hidden;
 }
+.nava-places .image-list .col-places,
+.nava-product .product-list .col-product{
+    display: none;
+}
 .nava-places .img-hover{
-    background: rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.6);
     top: 0;
     left: 100%;
     height: 100%;
@@ -206,21 +216,8 @@ header{
     border-radius: 3px;
     transition: 0.8s;
 }
-.nava-places .col-8:nth-child(1) .img-hover,
-.nava-places .col-4:nth-child(3) .img-hover
-{
-    margin-right: 12px;
-}
 .nava-places .col-4:nth-child(n+2) .img-hover{
     padding: 50px;
-}
-.nava-places .col-4:nth-child(2) .img-hover,
-.nava-places .col-4:nth-child(5) .img-hover
-{
-    margin-left: 12px;
-}
-.nava-places .col-4:nth-child(4) .img-hover{
-    margin: 0 12px;
 }
 .nava-places .img-hover p:first-child{
     font-size: 30px;
@@ -298,11 +295,23 @@ header{
     outline: none;
 }
 .nava-product {
-    padding: 50px 0;
+    padding: 50px 0 80px;
 }
 .nava-product .product-title{
     text-align: center;
     padding: 50px 0;
+}
+.product-list a{
+    color: #fff;
+    margin-left: 33px;
+    width: max-content;
+}
+.product-list{
+    margin-left: -33px;
+}
+.product-list img{
+    object-fit: cover;
+    transition: 1.2s;
 }
 .nava-product .product-title p:first-child{
     font-size: 30px;
@@ -325,6 +334,7 @@ header{
     font-weight: 600;
     font-size: 14px;
     border-radius: 4px;
+    transition: 0.8s;
 }
 .nava-product .col-6:nth-child(2n) .product-price,
 .nava-product .col-6:nth-child(2n) .product-des{
@@ -335,6 +345,7 @@ header{
     left: 20px;
     color: #fff;
     line-height: 1.4;
+    transition: 0.8s;
 }
 .nava-product .col-6:nth-child(n+3){
     margin-top: 24px;
@@ -378,9 +389,32 @@ header{
     height: 14px;
     background-image: url(../img/icon-people.png);
 }
+.nava-product .product-list .col-6{
+    overflow: hidden;
+}
+.nava-product .product-hover{
+    background: rgba(0,0,0,0.6);
+    top: 0;
+    left: 100%;
+    height: 100%;
+    width: 100%;
+    padding: 80px;
+    text-align: center;
+    border-radius: 3px;
+    transition: 0.8s;
+}
+.nava-product .product-hover p:first-child{
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+}
+.nava-product .product-hover p:last-child{
+    text-align: justify;
+}
 .nava-product .button-product-more{
     text-align: center;
-    padding: 80px 0 50px;
+    padding: 40px 0 0px;
 }
 .nava-product .button-product-more a{
     text-decoration: none;
@@ -390,6 +424,19 @@ header{
     font-weight: bold;
     font-size: 14px;
     border-radius: 5px;
+    position: relative;
+    transition: 0.5s;
+}
+.nava-product .button-product-more a::before{
+    position: absolute;
+    content: " ";
+    background-color: #000;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    top: 0;
+    opacity: 0;
+    transition: 0.5s all ease;
 }
 .nava-footer{
     background-color: #404040;
@@ -413,6 +460,17 @@ header{
     color: #fff;
     font-weight: 400;
     font-size: 15px;
+    transition: 0.7s;
+    position: relative;
+}
+.nava-footer ul li a::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    transition: 0.7s;
+    border-top: 2px solid #e7434e;
+    right: 0px;
+    bottom: -3px;
 }
 .nava-footer .form-control:focus{
     border-color: unset;
@@ -451,6 +509,9 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    transition: 0.5s;
+    transform: translateY(0);
 }
 .col-footer .icon-network .network-img:first-child{
     margin-left: 0;

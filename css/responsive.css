@@ -9,32 +9,54 @@
         background-color: #ffffff;
         color: #e7434e;
     }
-    .banner-nava .input-group-text:hover{
+    .input-group-text:hover{
         background-color: #000000;
+        color: #fff;
     }
     .nava-places .image-list a:hover .img-hover{
         left: 0;
     }
-    /* .nava-places .image-list a:hover img{
-        transform: scale(1.2);
-    } */
+    .nava-places .image-list a:hover img,
+    .nava-product .product-list a:hover img{
+        transform: scale(1.35);
+    }
     .nava-places .image-list a:hover .image-quantity,
     .nava-places .image-list a:hover .image-title{
         left: -100%;
     }
-    .nava-places .button-more a:hover::before{
+    .nava-places .button-more a:hover::before,
+    .nava-product .button-product-more a:hover::before{
         transition: 0.5s all ease;
         left: 0;
         right: 0;
         opacity: 1;
         z-index: -1;
     }
-    .nava-places .button-more a:hover{
+    .nava-places .button-more a:hover,
+    .nava-product .button-product-more a:hover{
         color: #fff;
     }
     .nava-service .service-button a:hover{
         box-shadow: inset 300px 0 0 0 #fff;
         color: #e7434e;
+    }
+    .nava-product .product-list a:hover .product-hover{
+        left: 0;
+    }
+    .nava-product .product-list a:hover .product-des,
+    .nava-product .product-list a:hover .product-price{
+        left: -100%;
+    }
+    .col-footer .icon-network .network-img:hover{
+        cursor: pointer;
+        transform: translateY(-7px);
+    }
+    .nava-footer ul li a:hover:after{
+         width: 100%;
+         left: 0;
+     }
+     .nava-footer ul li a:hover{
+         color:#e7434e;
     }
 }
 
