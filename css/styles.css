@@ -164,17 +164,13 @@ header{
     color: #717171;
 }
 .image-list img{
-    height: 360px;
     object-fit: cover;
     transition: 1s;
+    width: 100%;
 }
-.image-list a{
+.image-list > div{
     color: #fff;
-    margin-left: 33px;
-    width: max-content;
-}
-.image-list{
-    margin-left: -33px;
+    cursor: pointer;
 }
 .nava-places .image-quantity{
     top: 15px;
@@ -188,16 +184,19 @@ header{
     border-radius: 4px;
     transition: 0.7s;
 }
-.nava-places .col-4:nth-child(n+3){
-    margin-top: 33px;
+.nava-places .col-places:first-child{
+    width: calc((100% * 2/3) - 10px);
 }
-.nava-places .col-4:nth-child(2) .image-quantity,
-.nava-places .col-4:nth-child(4) .image-quantity,
-.nava-places .col-4:nth-child(5) .image-quantity,
-.nava-places .col-4:nth-child(2) .image-title,
-.nava-places .col-4:nth-child(4) .image-title,
-.nava-places .col-4:nth-child(5) .image-title{
-    left: 32px;
+.nava-places .col-places:nth-child(2){
+    margin-left: 30px;
+    width: calc((100% - 60px)/3);
+}
+.nava-places .col-places:nth-child(n+3){
+    margin-top: 30px;
+    width: calc((100% - 60px)/3);
+}
+.nava-places .col-places:nth-child(n+3):not(:nth-child(3n+3)){
+    margin-left: 30px;
 }
 .nava-places .image-title{
     bottom: 15px;
@@ -330,17 +329,20 @@ header{
     text-align: center;
     padding: 50px 0;
 }
-.product-list a{
+.product-list > div{
     color: #fff;
-    margin-left: 33px;
-    width: max-content;
-}
-.product-list{
-    margin-left: -33px;
+    cursor: pointer;
 }
 .product-list img{
     object-fit: cover;
     transition: 1.2s;
+    width: 100%;
+}
+.product-list .col-product{
+    width: calc((100% - 30px)/2);
+}
+.product-list .col-product:nth-child(2n){
+    margin-left: 30px;
 }
 .nava-product .product-title p:first-child{
     font-size: 30px;
@@ -365,10 +367,6 @@ header{
     border-radius: 4px;
     transition: 0.8s;
 }
-.nava-product .col-6:nth-child(2n) .product-price,
-.nava-product .col-6:nth-child(2n) .product-des{
-    left: 32px;
-}
 .nava-product .product-des{
     bottom: 15px;
     left: 20px;
@@ -376,8 +374,8 @@ header{
     line-height: 1.4;
     transition: 0.8s;
 }
-.nava-product .col-6:nth-child(n+3){
-    margin-top: 24px;
+.nava-product .col-product:nth-child(n+3){
+    margin-top: 30px;
 }
 .nava-product .product-des > p{
     font-size: 30px;

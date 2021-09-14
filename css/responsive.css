@@ -16,15 +16,15 @@
         background-color: #000000;
         color: #fff;
     }
-    .nava-places .image-list a:hover .img-hover{
+    .nava-places .image-list div:hover .img-hover{
         left: 0;
     }
-    .nava-places .image-list a:hover img,
-    .nava-product .product-list a:hover img{
+    .nava-places .image-list div:hover img,
+    .nava-product .product-list div:hover img{
         transform: scale(1.35);
     }
-    .nava-places .image-list a:hover .image-quantity,
-    .nava-places .image-list a:hover .image-title{
+    .nava-places .image-list div:hover .image-quantity,
+    .nava-places .image-list div:hover .image-title{
         left: -100%;
     }
     .nava-places .button-more a:hover::before,
@@ -43,11 +43,11 @@
         box-shadow: inset 300px 0 0 0 #fff;
         color: #e7434e;
     }
-    .nava-product .product-list a:hover .product-hover{
+    .nava-product .product-list div:hover .product-hover{
         left: 0;
     }
-    .nava-product .product-list a:hover .product-des,
-    .nava-product .product-list a:hover .product-price{
+    .nava-product .product-list div:hover .product-des,
+    .nava-product .product-list div:hover .product-price{
         left: -100%;
     }
     .col-footer .icon-network .network-img:hover{
