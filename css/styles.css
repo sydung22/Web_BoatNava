@@ -590,7 +590,7 @@ header{
     margin-top: 32px;
     width: 30px;
     height: 3px;
-    background:#c3a281;
+    background:#fff;
     border-radius: 5px;
     transition: all .5s ease-in-out;
 }
@@ -600,7 +600,7 @@ header{
     content: '';
     width: 30px;
     height: 3px;
-    background:#c3a281;
+    background:#fff;
     border-radius: 5px;
     transition: all .5s ease-in-out;
 }
@@ -617,9 +617,9 @@ header{
 }
 .btn-bar.open .menu-btn_burger::before{
     transform: rotate(45deg) translate(10px, -10px);
-    background:#fff;
+    background:#e7434e;
 }
 .btn-bar.open .menu-btn_burger::after{
     transform: rotate(-45deg) translate(10px, 10px);
-    background:#fff;
+    background:#e7434e;
 }

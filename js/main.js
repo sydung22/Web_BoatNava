@@ -33,4 +33,23 @@ $( document ).ready(function() {
       delay: 10,
       time: 3000
     });
+
+
+    $('.btn-bar').click(function(){
+      $('.nava-nav ul').toggleClass('show');
+    })
+    
+    const menuBtn = document.querySelector('.btn-bar');
+    let menuOpen = false;
+    menuBtn.addEventListener('click', () => {
+    
+      if(!menuOpen) {
+        menuBtn.classList.add('open');
+        menuOpen = true;
+      }else{
+        menuBtn.classList.remove('open');
+        menuOpen = false;
+      }
+    
+    });
 });
