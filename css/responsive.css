@@ -2,6 +2,9 @@
     .container{
         max-width: 1170px;
     }
+    .nava-header .container-fluid{
+        max-width: 1500px;
+    }
     .nava-header .nava-nav ul li a:hover{
         color: #e7434e;
     }
@@ -62,4 +65,275 @@
          color:#e7434e;
     }
 }
+@media(max-width: 991px){
+    .nava-header .container-fluid{
+        display: block;
+    }
+    .nava-header .container-fluid .logo{
+        text-align: center;
+        padding-bottom: 0px;
+    }
+    .nava-nav ul {
+        position: fixed;
+        width: 100%;
+        min-height: 100vh;
+        background: #000;
+        top: 74px;
+        left: -110%;
+        text-align: center;
+        display: block;
+        transition: all 0.5s linear;
+        display: block!important;
+    }
+    .nava-header .nava-nav ul{
+        padding: 0;
+    }
+    .nava-header .nava-nav ul li{
+        padding: 0;
+        height: 76px;
+        border-bottom: 1px solid #fff;
+    }
+    .nava-header .nava-nav ul li:first-child{
+        border-top: 1px solid #fff;
+    }
+    .nava-header .nava-nav ul li:nth-child(n+2){
+        margin-left: 0;
+    }
+    .nava-header .nava-nav ul li:last-child a{
+        border: unset;
+        padding: 0
+    }
+    .nava-header .nava-nav ul li a{
+        display: block;
+        height: 100%;
+        line-height: 70px;
+    }
+    .nava-header .nava-nav ul li:not(:last-child) a{
+        padding-bottom: 0;
+    }
+    .banner-nava .container{
+        padding-top: 150px;
+    }
+    .banner-nava .banner-text p:first-child{
+        font-size: 52px;
+        letter-spacing: unset;
+    }
+    .banner-nava .banner-text p{
+        font-size: 25px;
+    }
+    .banner-nava .input-group{
+        padding: 20px 0;
+    }
+    .banner-nava,.banner-nava .container{
+        min-height: unset;
+        height: 550px;
+    }
+    .nava-places .col-places:first-child{
+        width: 100%;
+    }
+    .nava-places .col-places:nth-child(n+3),
+    .nava-places .col-places:nth-child(2){
+        width: calc((100% - 30px)/2);
+    }
+    .nava-places .col-places:nth-child(n+3):not(:nth-child(3n+3)),
+    .product-list .col-product:nth-child(2n){
+        margin-left: 0;
+    }
+    .nava-places .col-places:nth-child(2n+3){
+        margin-left: 30px!important;
+    }
+    .nava-places .col-places:nth-child(2),
+    .product-list .col-product:nth-child(2){
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .nava-service{
+        padding: 50px 0 70px;
+    }
+    .nava-service .service-text p:first-child{
+        font-size: 45px;
+    }
+    .nava-service .service-text p:last-child{
+        font-size: 25px;
+    }
+    .nava-service .service-text{
+        padding-bottom: 20px;
+    }
+    .nava-product .product-title{
+        padding: 0 0 20px;
+    }
+    .product-list .col-product{
+        width: 100%;
+    }
+    .nava-product .product-title p:first-child{
+        padding-bottom: 0px;
+    }
+    .nava-product{
+        padding: 50px 0;
+    }
+    .nava-footer .col-footer:nth-child(2){
+        padding-left: 80px!important;
+    }
+    .nava-footer ul{
+        margin: 0;
+    }
+    .nava-footer .col-footer:nth-child(n+3){
+        padding-top: 25px;
+    }
+}
+@media (max-width:767px){
+    .container{
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .container-fluid{
+        padding: 0;
+    }
+    .banner-nava .container{
+        padding-top: 140px;
+    }
+    .banner-nava .banner-text p:first-child{
+        font-size: 45px;
+    }
+    .banner-nava .input-group{
+        padding: 10px 40px;
+    }
+    .banner-nava .container,
+    .banner-nava{
+        min-height: unset;
+        height: 500px;
+    }
+    .nava-footer .col-footer:nth-child(2),
+    .nava-footer .col-footer:last-child{
+        padding-left: 0px!important;
+    }
+    .nava-places .col-places:nth-child(2),
+    .nava-places .col-places:nth-child(n+3){
+        margin-top: 20px;
+    }
+    .nava-places .col-places:nth-child(2n+3){
+        margin-left: 20px!important;
+    }
+    .nava-footer ul{
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .nava-footer ul li{
+        padding-right: 20px;
+    }
+    .nava-footer p{
+        text-align: center;
+        margin-bottom: 5px!important
+    }
+    .nava-footer .col-footer:nth-child(n+2){
+        padding-top: 25px;
+    }
+    .col-footer .icon-network{
+        justify-content:center;
+        padding-top: 20px;
+    }
+    .nava-footer{
+        padding: 30px 0;
+    }
 
+}
+@media (max-width:575px){
+.banner-nava .container {
+    padding-top: 120px;
+}
+.banner-nava .container,
+.banner-nava{
+    height: 400px;
+}
+.banner-nava .input-group{
+    padding: 10px 0px;
+}
+.banner-nava .banner-text p:first-child,
+.nava-service .service-text p:first-child{
+    font-size: 7vw;
+}
+.banner-nava .banner-text p,.nava-service .service-text p:last-child{
+    font-size: 4vw;
+}
+.form-control{
+    font-size: 14px;
+}
+.banner-nava .banner-info{
+    bottom: -170px;
+    flex-wrap: wrap;
+}
+.nava-places{
+    padding: 180px 0 60px;
+}
+.banner-nava .banner-info .info-item{
+    width: calc(100% / 2);
+}
+.banner-nava .banner-info .info-item:nth-child(2){
+    border-right: unset;
+}
+.banner-nava .banner-info .info-item:nth-child(n+3){
+    margin-top: 20px;
+}
+.places-title{
+    padding: 30px 0 10px
+}
+.nava-places .col-places{
+        width: 100%!important;
+}
+.nava-places .col-places:nth-child(2n+3){
+        margin-left: 0px!important;
+    }
+    .image-list img{
+        height: 300px;
+    }
+.nava-service .service-text{
+    padding-bottom: 10px;
+}
+.nava-product .product-title{
+    padding: 0;
+}
+.nava-places .image-title p:first-child{
+    font-size: 7vw;
+}
+.nava-places .image-title p:last-child
+{
+    font-size: 5vw;
+}
+.nava-service .service-button a{
+    font-size: 12px;
+}
+.places-title p:first-child,
+.nava-product .product-title p:first-child{
+    font-size: 20px;
+    padding-bottom: 0;
+}
+.places-title p:last-child,
+.nava-product .product-title p:last-child,
+.nava-product .product-des .des-info p
+{
+    font-size: 14px;
+}
+.nava-product .product-des > p{
+    font-size: 20px;
+}
+.nava-product .product-des .des-info p:last-child{
+    padding-left: 50px;
+}
+.nava-product .product-des .des-info p:last-child::before{
+    left: 24px;
+}
+.nava-product{
+    padding: 30px 0;
+}
+.nava-service{
+    padding: 40px 0 60px;
+}
+.banner-nava .banner-info p:first-child{
+    font-size: 25px;
+}
+.input-group-text{
+    padding: 10px 20px 10px 40px;
+}
+}
