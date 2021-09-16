@@ -78,7 +78,7 @@
         width: 100%;
         min-height: 100vh;
         background: #000;
-        top: 70px;
+        top: 73px;
         left: -110%;
         text-align: center;
         display: block;
@@ -308,13 +308,6 @@
 .nava-product .product-title{
     padding: 0;
 }
-.nava-places .image-title p:first-child{
-    font-size: 7vw;
-}
-.nava-places .image-title p:last-child
-{
-    font-size: 5vw;
-}
 .nava-service .service-button a{
     font-size: 12px;
 }
@@ -325,11 +318,13 @@
 }
 .places-title p:last-child,
 .nava-product .product-title p:last-child,
-.nava-product .product-des .des-info p
+.nava-product .product-des .des-info p,
+.nava-places .image-title p:last-child
 {
     font-size: 14px;
 }
-.nava-product .product-des > p{
+.nava-product .product-des > p,
+.nava-places .image-title p:first-child{
     font-size: 20px;
 }
 .nava-product .product-des .des-info p:last-child{
@@ -339,7 +334,7 @@
     left: 24px;
 }
 .nava-product{
-    padding: 30px 0;
+    padding: 35px 0 60px;
 }
 .nava-service{
     padding: 40px 0 60px;
@@ -355,5 +350,11 @@
 }
 .nava-nav ul{
     top: 54px;
+}
+.banner-nava .input-group-text:last-child{
+    display: block;
+}
+.banner-nava .input-group-text:nth-child(2){
+    display: none;
 }
 }

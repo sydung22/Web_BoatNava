@@ -111,6 +111,13 @@ header{
     text-decoration: none;
     transition: 0.5s;
 }
+.banner-nava .input-group-text:nth-child(2){
+    border-top-right-radius: .25rem!important;
+    border-bottom-right-radius: .25rem!important;
+}
+.banner-nava .input-group-text:last-child{
+    display: none;
+}
 .banner-nava .input-group-text::before{
     position: absolute;
     content: '';
@@ -186,6 +193,11 @@ header{
     font-size: 14px;
     border-radius: 4px;
     transition: 0.7s;
+}
+.nava-places .col-places a,
+.nava-product .col-product a{
+    text-decoration: none;
+    color: inherit;
 }
 .nava-places .col-places:first-child{
     width: calc((100% * 2/3) - 10px);
