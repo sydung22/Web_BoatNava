@@ -40,14 +40,17 @@ $( document ).ready(function() {
     })
     
     const menuBtn = document.querySelector('.btn-bar');
+    let header = document.querySelector('header');
     let menuOpen = false;
     menuBtn.addEventListener('click', () => {
     
       if(!menuOpen) {
         menuBtn.classList.add('open');
+        header.classList.add('scrolling-active');
         menuOpen = true;
       }else{
         menuBtn.classList.remove('open');
+        // header.classList.remove('scrolling-active');
         menuOpen = false;
       }
     

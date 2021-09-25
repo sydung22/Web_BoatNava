@@ -5,6 +5,8 @@
     .nava-header .container-fluid{
         max-width: 1500px;
     }
+}
+@media(min-width: 1023px){
     .nava-header .nava-nav ul li a:hover{
         color: #e7434e;
     }
@@ -47,11 +49,11 @@
         color: #e7434e;
     }
     .nava-product .product-list div:hover .product-hover{
-        left: 0;
+        opacity: 1;
     }
     .nava-product .product-list div:hover .product-des,
     .nava-product .product-list div:hover .product-price{
-        left: -100%;
+        opacity: 0;
     }
     .col-footer .icon-network .network-img:hover{
         cursor: pointer;
